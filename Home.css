@@ -1,0 +1,361 @@
+@font-face {
+    font-family: "Eurostile";
+    src: url("EuroStyle\ Normal.woff");
+}
+
+* {
+    padding: 0;
+    font-family: Eurostile, sans-serif;
+    margin: 0;
+    letter-spacing: 2px;
+
+}
+
+body {
+    width: 100%;
+    background-color: #000000;
+    display: grid;
+    place-items: center;
+}
+
+#background-video {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+#background-video2 {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+    opacity: 50%;
+}
+
+
+
+h1 {
+    color: #FFF;
+    font-size: 78px;
+    text-align: center;
+    font-family: Eurostile;
+    padding-top: 75px;
+}
+
+h2 {
+    font-size: 38px;
+    color: #FFF;
+    text-align: center;
+    margin-top: 5px;
+    padding-top: 25px;
+    font-weight: bold;
+}
+
+
+
+h5 {
+    text-align: center;
+    color: #FFF;
+    font-size: 28px;
+    font-family: Eurostile;
+    margin: 25px auto;
+    padding-top: 10px;
+    line-height: 28px;
+}
+
+/* Start of body elements */
+
+.body-elements {
+    padding: 25px;
+    height: fit-content;
+    color: #FFF;
+}
+
+.body-elements h2 {
+    font-family: Eurostile;
+    color: #FFF;
+    text-align: center;
+    font-size: 38px;
+    margin-top: 75px;
+    margin-bottom: 50px;
+}
+
+.body-elements p {
+    margin: 50px auto;
+    width: 65%;
+    font-family: Eurostile;
+    font-size: 32px;
+    line-height: 32px;
+}
+
+.selfie {
+    text-align: center;
+    margin: 0 50px;
+    position: relative;
+    bottom: 50px;
+}
+
+.body-elements img {
+    width: 250px;
+    height: 250px;
+    margin: 75px auto 50px;
+    display: inline-block;
+    border-radius: 50%;
+    border: 2px solid #045756;
+
+}
+
+/* Start of the Portfolio section */
+.portfolio-section {
+    color: #FFF;
+    text-align: center;
+    padding-top: 150px;
+    height: 100%;
+    transition: background-color 1s ease;
+    margin: 20px;
+}
+
+.portfolio-section:hover {
+    border-radius: 15px;
+}
+
+.favicon {
+    height: 50px;
+    display: inline-flex;
+    margin: 5px 25px 15px;
+}
+
+.portfolio-section h2 {
+    color: #FFF;
+    font-size: 42px;
+    margin-bottom: 100px;
+}
+
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+    float: left;
+    width: 45%;
+    padding: 15px;
+    margin-top: 35px;
+}
+
+.column img {
+    border-radius: 15px;
+}
+
+
+.column:hover {
+    border-radius: 15px;
+    background-color: #045756;
+}
+
+
+/* Clear floats after image containers */
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* Skill section */
+
+.skill-section {
+    margin: 250px auto 50px;
+    background-color: #04575680;
+    width: 75%;
+    transition: background-color 500ms linear;
+    border-radius: 15px;
+    padding-bottom: 50px;
+}
+
+.skill-section:hover {
+    background-color: #045756;
+    transition: background-color 500ms linear;
+}
+
+
+.skill-section h3 {
+    font-size: 48px;
+    color: #FFF;
+    text-align: center;
+    padding: 50px;
+}
+
+.skill-section p {
+    color: #FFF;
+    font-size: 22px;
+    display: block;
+    margin: 45px auto 5px;
+    text-align: center;
+
+}
+
+.container {
+    width: 50%;
+    /* Full width */
+    background-color: #ddd;
+    /* Grey background */
+    display: block;
+    margin: 15px auto;
+    border-radius: 15px;
+
+}
+
+.skills {
+    text-align: right;
+    /* Right-align text */
+    padding-top: 10px;
+    /* Add top padding */
+    padding-bottom: 10px;
+    /* Add bottom padding */
+    color: white;
+    /* White text color */
+    border-radius: 15px;
+
+}
+
+.html {
+    width: 90%;
+    background-color: #04AA6D;
+}
+
+/* Green */
+.css {
+    width: 80%;
+    background-color: #2196F3;
+}
+
+/* Blue */
+.js {
+    width: 65%;
+    background-color: #f44336;
+}
+
+/* Red */
+.php {
+    width: 50%;
+    background-color: #FF6D28;
+}
+
+/* Start of the contact section */
+
+.contact-section {
+    width: 100%;
+}
+
+.contact-section h3 {
+    font-size: 48px;
+    color: #FFF;
+    text-align: center;
+    padding: 50px;
+}
+
+.icon-bar {
+    position: fixed;
+    top: 50px;
+    left: 5px;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    margin: 50px 25px;
+}
+
+#github {
+    margin-bottom: 25px;
+    margin-left: 10px;
+    --fa-animation-duration: 5s;
+}
+
+
+.floating {
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes floating {
+    0% {
+        transform: translate(0, 0px);
+    }
+
+    50% {
+        transform: translate(0, 15px);
+    }
+
+    100% {
+        transform: translate(0, -0px);
+    }
+}
+
+.Geo {
+    width: 750px;
+    margin: 150px;
+}
+
+
+/* Media quries */
+@media only screen and (max-width: 1000px) {
+    body {
+
+
+
+        #background-video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            position: fixed;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            z-index: -1;
+        }
+
+        #background-video2 {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            position: fixed;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            z-index: -1;
+            opacity: 50%;
+        }
+    }
+
+    .icon-bar {
+        position: fixed;
+        top: 50px;
+        left: 5px;
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+        margin: 100px 50px 50px;
+    }
+
+    #github {
+        margin-left: 5px;
+        --fa-animation-duration: 5s;
+        display: flex;
+        padding-top: 25px;
+    }
+
+    * {
+        letter-spacing: 5px;
+        line-height: 26px;
+    }
+}
